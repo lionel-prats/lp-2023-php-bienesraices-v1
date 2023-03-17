@@ -1,0 +1,21 @@
+/* display: inline-block */
+.boton-amarillo {
+    @include boton($amarillo, inline-block);
+}
+.boton-verde {
+    @include boton($verde, inline-block);
+}
+
+/* display: block */
+.boton-amarillo-block {
+    @include boton($amarillo, block);
+}
+.boton-rojo-block {
+    @include boton($rojo, block);
+}
+.boton-verde-block {
+    @include boton($verde, block);
+}
+.lh-default {
+    line-height: 1.8;
+}

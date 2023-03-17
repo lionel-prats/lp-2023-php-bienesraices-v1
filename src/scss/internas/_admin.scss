@@ -1,0 +1,48 @@
+.alerta {
+    padding: .5rem;
+    margin: 1rem 0;
+    font-weight: $bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: $blanco;
+
+    &.error {
+        background-color: $rojo;
+    }
+    &.exito {
+        background-color: $verde;
+    }
+}
+
+/*
+table {
+    border: 1px solid red;
+}
+th,td {
+    border: 1px solid blue;
+}
+*/
+table.propiedades {
+    width: 100%;
+    margin-top: 4rem;
+    border-spacing: 0px; 
+    /* 
+    border-spacing es como una especie de margen externo para las celdas de una tabla. 
+    https://developer.mozilla.org/en-US/docs/Web/CSS/border-spacing
+    */
+
+    thead {
+        background-color: $verde;   
+    }
+    th {
+        padding: 2rem;
+        color: $blanco;
+    }
+    .imagen-tabla {
+        width: 10rem;
+    }
+}
+
+.imagen-small {
+    width: 20rem;
+}

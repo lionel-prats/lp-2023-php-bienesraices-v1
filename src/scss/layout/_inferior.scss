@@ -1,0 +1,49 @@
+@include tablet {
+    .seccion-inferior {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 2rem
+    }
+};
+
+.entrada-blog {
+    margin-bottom: 2rem;
+    @include tablet {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem
+    };
+    // pseudo-clase para seleccionar al ultimo elemento de entre un grupo de hermanos (misma etiqueta, misma clase, y dentro del mismo contenedor)
+    // repasar con dorian porque hice pruebas y no termino de entenderlo  
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.informacion-meta {
+    span {
+        color: $amarillo;
+    }
+}
+
+.texto-entrada {
+    margin-top: 2rem;
+    @include tablet {
+        margin-top: 0;
+    };
+    a {
+        color: $negro;
+    }
+    h4 {
+        margin: 0;
+        line-height: 1.4;
+        &:after {
+            content: "";
+            display: block;
+            width: 15rem;
+            height: .5rem;
+            margin-top: 1rem;
+            background-color: $verde;
+        }
+    }
+}

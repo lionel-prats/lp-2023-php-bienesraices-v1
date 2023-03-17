@@ -1,0 +1,68 @@
+.formulario {
+    p {
+        margin: 2rem 0 0 0;
+        font-size: 1.4rem;
+        color: $grisOscuro;
+    }
+    legend {
+        font-size: 2rem;
+        color: $grisOscuro;
+    }
+    label {
+        display: block;
+        font-weight: $bold;
+        text-transform: uppercase;
+    }
+    /*
+    SELECTOR DE ATRIBUTO
+    input[type="text"],
+    input[type="email"]
+     {
+        padding: 5rem;
+    }
+    */
+    // selecciono todos los inputs dentro de .formulario, excepto los que tengan type="submit"
+    input:not([type="submit"]),
+    textarea,
+    select {
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid $gris;
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+        background-color: $blanco;
+    }
+
+    textarea {
+        height: 20rem;
+        resize: vertical;
+    }
+
+    .forma-contacto {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 30rem;
+    }
+    input[type = "radio"] {
+        width: auto;
+        margin: 0;
+    }
+}
+
+.form-login {
+    .input-pass{
+        margin-bottom: .5rem;
+        display: none;
+    }
+    input[type=checkbox]{
+        display: initial;
+        width: auto;
+        margin: 0 .5rem;
+    }
+    label[for=checkbox]  {
+        display: initial;
+        font-size: 1.2rem;
+    }
+}

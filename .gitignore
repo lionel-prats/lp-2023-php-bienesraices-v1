@@ -1,0 +1,11 @@
+/node_modules
+/package-lock.json
+
+/build
+
+/admin/propiedades/inyeccion.php
+/admin/propiedades/inyeccion2.php
+/admin/propiedades/inyeccion3.php
+/includes/config/database.php
+/imagenes
+usuario.php
